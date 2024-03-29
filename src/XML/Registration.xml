@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Registration Test Suite">
+    <test name="Registration Test">
+
+        <groups>
+            <run>
+                <include name="Registration"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class />
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TAB Menu Test Suit">
+    <test name="TAB Menu Test">
+
+        <groups>
+            <run>
+                <include name="TAB Menu"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class />
+        </classes>
+
+    </test>
+</suite>

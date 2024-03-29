@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="UITesting Test Suit">
+    <test name="UITesting Test">
+
+        <groups>
+            <run>
+                <include name="UITesting"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class />
+        </classes>
+
+    </test>
+</suite>

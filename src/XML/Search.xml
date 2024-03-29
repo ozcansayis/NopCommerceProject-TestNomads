@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Search Test Suit">
+    <test name="Search Test">
+
+        <groups>
+            <run>
+                <include name="Search"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class />
+        </classes>
+
+    </test>
+</suite>

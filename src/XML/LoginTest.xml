@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Login Test Suite">
+    <test name="Login Test">
+
+        <groups>
+            <run>
+                <include name="LoginTest"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class />
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="All Groups Test Suite">
+    <test name="All Groups Test">
+
+        <groups>
+            <run>
+                <include name="LoginTest"/>
+                <include name="Order"/>
+                <include name="Registration"/>
+                <include name="Regression"/>
+                <include name="Search"/>
+                <include name="Smoke"/>
+                <include name="TAB Menu"/>
+                <include name="UITesting"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_501.UserRegistrationTest"/>
+            <class name="US_502.UserLoginTest"/>
+            <class name="US_503.PositiveAndNegativeLoginCombinationsTest"/>
+            <class name="US_504.TabMenuControlTest"/>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+            <class name="US_506.GiftOrderingProcessTest"/>
+            <class name="US_507.ComputerOrderProcessTest"/>
+            <class name="US_508.ParameterizedSearchProcessTest"/>
+        </classes>
+
+    </test>
+</suite>
