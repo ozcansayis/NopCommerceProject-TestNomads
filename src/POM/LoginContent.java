@@ -29,4 +29,29 @@ public class LoginContent {
 
     @FindBy(xpath = "//div[@class='page login-page']/div/h1")
     public WebElement loginPageTitle;
+
+    @FindBy(id = "FirstName")
+    public WebElement fistName;
+
+    @FindBy(id = "LastName")
+    public WebElement lastName;
+
+    @FindBy(id ="Email" )
+    public WebElement email2;
+
+    @FindBy(id = "Password")
+    public WebElement password2;
+
+    @FindBy(id = "ConfirmPassword")
+    public WebElement ConfirmPassword;
+
+    @FindBy(id = "register-button")
+    public WebElement registerButton ;
+
+    @FindBy(className = "result")
+    public WebElement successMessage ;
+
+
+
+
 }
