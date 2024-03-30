@@ -31,4 +31,19 @@
             <class name="US_502.UserLoginTest"/>
         </classes>
     </test>
+
+    <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+
+        <groups>
+            <run>
+                <include name="LoginTest"/>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_502.UserLoginTest"/>
+        </classes>
+    </test>
 </suite>
