@@ -64,6 +64,12 @@ public class HomePageContent {
     @FindBy(css = "[class='product-title'] [href='/build-your-own-computer']")
     public WebElement buildOwnComputer;
 
+    @FindBy(id = "[id=product_attribute_2]" )
+    public WebElement ramChoice;
+
+    @FindBy(css = "[class='bar-notification success'] [class='content']")
+    public WebElement addToChartError;
+
 
 
 }

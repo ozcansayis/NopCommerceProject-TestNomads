@@ -29,4 +29,5 @@ public class LoginContent {
 
     @FindBy(xpath = "//div[@class='page login-page']/div/h1")
     public WebElement loginPageTitle;
+
 }
