@@ -55,21 +55,12 @@ public class HomePageContent {
     @FindBy(xpath = "//div[@class='header-links']/ul/li[1]/a")
     public WebElement myAccount;
 
-    @FindBy(css ="[class='top-menu notmobile'] [href='/computers']")
-    public WebElement computers;
+    @FindBy(id = "small-searchterms")
+    public WebElement searchBox;
 
-    @FindBy(css="[class='title'] [href='/desktops']")
-    public WebElement desktops;
+    @FindBy(xpath = "//button[text()='Search']")
+    public WebElement searchButton;
 
-    @FindBy(css = "[class='product-title'] [href='/build-your-own-computer']")
-    public WebElement buildOwnComputer;
-
-    @FindBy(id = "[id=product_attribute_2]" )
-    public WebElement ramChoice;
-
-    @FindBy(css = "[class='bar-notification success'] [class='content']")
-    public WebElement addToChartError;
-
-
-
+    @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
+    public WebElement productTitle;
 }
