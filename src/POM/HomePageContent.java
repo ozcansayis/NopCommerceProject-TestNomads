@@ -2,16 +2,13 @@ package POM;
 
 import Utility.BaseDriverParameter;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.*;
 
-public class HomePageContent{
+public class HomePageContent {
     public HomePageContent() {
         PageFactory.initElements(BaseDriverParameter.driver, this);
     }
 
-    @FindBy(xpath = "")
+    @FindBy(linkText = "Log out")
     public WebElement logoutButton;
-
-
 }
