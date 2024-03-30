@@ -63,4 +63,38 @@ public class HomePageContent {
 
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
+
+    @FindBy(className = "ico-register")
+    public WebElement registerbuton;
+
+    @FindBy(id = "FirstName")
+    public WebElement fistName;
+
+    @FindBy(id = "LastName")
+    public WebElement lastName;
+
+    @FindBy(id ="Email" )
+    public WebElement email;
+
+    @FindBy(id = "Password")
+    public WebElement password;
+
+    @FindBy(id = "ConfirmPassword")
+    public WebElement ConfirmPassword;
+
+    @FindBy(id = "register-button")
+    public WebElement registerButton ;
+
+    @FindBy(className = "result")
+    public WebElement successMessage ;
+
+
+
+
+
+
+
+
+
+
 }

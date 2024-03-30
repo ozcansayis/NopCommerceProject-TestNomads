@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="User Registration Test">
-    <test name="TC_501">
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
 
+            <class name="US_501.UserRegistrationTest"/>
+        </classes>
+        </test>
+
+        <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="US_501.UserRegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <classes>
+            <class name="US_501.UserRegistrationTest"/>
+        </classes>
     </test>
 </suite>
+
+
+
+
+
