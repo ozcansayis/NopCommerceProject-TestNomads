@@ -51,5 +51,9 @@ public class HomePageContent {
     @FindBy(css = "[class='bar-notification success']")
     public WebElement giftSuccess;
 
+    // My Account
+    @FindBy(xpath = "//div[@class='header-links']/ul/li[1]/a")
+    public WebElement myAccount;
+
 
 }

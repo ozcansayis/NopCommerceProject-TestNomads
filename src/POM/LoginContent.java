@@ -26,4 +26,7 @@ public class LoginContent {
 
     @FindBy(css = "[class='message-error validation-summary-errors']")
     public WebElement failedLogin;
+
+    @FindBy(xpath = "//div[@class='page login-page']/div/h1")
+    public WebElement loginPageTitle;
 }

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <suite name="User Login Test">
     <test name="TC_502">
+
+        <parameter name="browserType" value="chrome"/>
+
+        <classes>
+            <class name="US_502.UserLoginTest"/>
+        </classes>
 
     </test>
 </suite>
