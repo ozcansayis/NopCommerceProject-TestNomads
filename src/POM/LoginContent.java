@@ -2,23 +2,28 @@ package POM;
 
 import Utility.BaseDriverParameter;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.*;
 
 public class LoginContent {
     public LoginContent() {
         PageFactory.initElements(BaseDriverParameter.driver, this);
     }
 
-    @FindBy(id = "")
+    @FindBy(linkText = "Log in")
     public WebElement loginButton;
 
-    @FindBy(id = "")
-    public WebElement username;
+    @FindBy(css = "#Email")
+    public WebElement email;
 
-    @FindBy(id = "")
+    @FindBy(css = "#Password")
     public WebElement password;
 
-    @FindBy(id = "")
+    @FindBy(css = "[class='button-1 login-button']")
     public WebElement loginButton2;
+
+    @FindBy(css = "#Email-error")
+    public WebElement emailError;
+
+    @FindBy(css = "[class='message-error validation-summary-errors']")
+    public WebElement failedLogin;
 }
