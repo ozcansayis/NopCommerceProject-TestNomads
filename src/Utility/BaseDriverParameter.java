@@ -12,9 +12,9 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class BaseDriverParameter {
+public class BaseDriverParameter extends ParentPage {
     public static WebDriver driver;
-    public static Logger logTutma = LogManager.getLogger();
+    public static Logger logger = LogManager.getLogger();
 
     @BeforeClass
     @Parameters("browserType")
@@ -40,17 +40,17 @@ public class BaseDriverParameter {
         ParentPage.Wait(3);
         driver.quit();
 
-        logTutma.info("Driver closed.");
+        logger.info("Driver closed.");
     }
 
     @BeforeMethod
     public void beforeMetod() {
-        logTutma.info("Method started.");
+        logger.info("Method started.");
 
     }
 
     @AfterMethod
     public void afterMetod(ITestResult sonuc) {
-        logTutma.info(sonuc.getName() + " Method finished. " + (sonuc.getStatus() == 1 ? "Passed" : "Failed"));
+        logger.info(sonuc.getName() + " Method finished. " + (sonuc.getStatus() == 1 ? "Passed" : "Failed"));
     }
 }
