@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserLoginTest extends BaseDriverParameter {
-    @Test
+    @Test(groups = {"LoginTest","Smoke"})
     public void TC_502() {
         LoginContent lc = new LoginContent();
         HomePageContent hpc = new HomePageContent();
