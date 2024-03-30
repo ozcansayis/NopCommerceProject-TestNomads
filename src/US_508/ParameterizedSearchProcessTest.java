@@ -1,16 +1,13 @@
 package US_508;
 
-import POM.HomePageContent;
-import POM.LoginContent;
+import POM.*;
 import Utility.BaseDriverParameter;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
+import org.testng.annotations.*;
 
 public class ParameterizedSearchProcessTest extends BaseDriverParameter {
     @Test(groups = {"UITesting", "Search", "Smoke", "Regression"})
-    @Parameters("searchText")
+    @Parameters({"searchText"})
     public void TC_508(String text) {
         LoginContent lc = new LoginContent();
         HomePageContent hpc = new HomePageContent();
