@@ -1,13 +1,12 @@
 package US_502;
 
-import POM.HomePageContent;
-import POM.LoginContent;
+import POM.*;
 import Utility.BaseDriverParameter;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserLoginTest extends BaseDriverParameter {
-    @Test(groups = {"LoginTest","Smoke"})
+    @Test(groups = {"LoginTest", "Smoke"})
     public void TC_502() {
         LoginContent lc = new LoginContent();
         HomePageContent hpc = new HomePageContent();
