@@ -16,7 +16,7 @@ public class BaseDriverParameter extends ParentPage {
     public static WebDriver driver;
     public static Logger logger = LogManager.getLogger();
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     @Parameters("browserType")
     public void beforeClass(String browserType) {
 
@@ -35,7 +35,7 @@ public class BaseDriverParameter extends ParentPage {
         driver.get("https://demo.nopcommerce.com/");
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void afterClass() {
         ParentPage.Wait(3);
         driver.quit();
@@ -43,13 +43,13 @@ public class BaseDriverParameter extends ParentPage {
         logger.info("Driver closed.");
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void beforeMetod() {
         logger.info("Method started.");
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void afterMetod(ITestResult sonuc) {
         logger.info(sonuc.getName() + " Method finished. " + (sonuc.getStatus() == 1 ? "Passed" : "Failed"));
     }
