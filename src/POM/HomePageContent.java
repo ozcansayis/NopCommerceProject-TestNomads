@@ -55,5 +55,12 @@ public class HomePageContent {
     @FindBy(xpath = "//div[@class='header-links']/ul/li[1]/a")
     public WebElement myAccount;
 
+    @FindBy(id = "small-searchterms")
+    public WebElement searchBox;
 
+    @FindBy(xpath = "//button[text()='Search']")
+    public WebElement searchButton;
+
+    @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
+    public WebElement productTitle;
 }
