@@ -1,9 +1,7 @@
 package POM;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 
 import java.time.Duration;
@@ -36,7 +34,7 @@ public class ParentPage {
 
     public void scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
+        js.executeScript("arguments[0].scrollIntoView(false);", element);
     }
 
     public void verifyContainsText(WebElement element, String value) {
@@ -72,5 +70,4 @@ public class ParentPage {
             throw new RuntimeException(e);
         }
     }
-
 }
