@@ -5,6 +5,13 @@
 
         <parameter name="browserType" value="chrome"/>
 
+        <groups>
+            <run>
+                <include name="LoginTest"/>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="US_502.UserLoginTest"/>
         </classes>
