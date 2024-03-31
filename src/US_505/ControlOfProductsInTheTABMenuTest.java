@@ -2,24 +2,18 @@ package US_505;
 
 import POM.HomePageContent;
 import Utility.BaseDriverParameter;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
 
 public class ControlOfProductsInTheTABMenuTest extends BaseDriverParameter {
-    @Test(groups = {"UITesting", "Search", "TAB Menu", "Regression"})
+    @Test(groups = {"UITesting", "Search", "TAB Menu", "Regression"}, priority = 5)
     @Parameters({"product"})
-
     public void TC_505(String product) {
         Actions act = new Actions(driver);
         WebDriverWait wwait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -44,20 +38,20 @@ public class ControlOfProductsInTheTABMenuTest extends BaseDriverParameter {
                 productName.add(x.getText());
             }
         }
-
         mySendKeys(hp.searchBox, product);
         myClick(hp.searchButton);
         myClick((hp.viewMode));
         wwait.until(ExpectedConditions.visibilityOfAllElements(hp.productList));
-        Assert.assertTrue(ListContainsStringg(productName,product),"bomboclat");
-
+        Assert.assertTrue(ListContainsStr(productName, product), "The searched product is not in the list!");
     }
 
-    public static boolean ListContainsStringg(List<String> list, String string) {
+    public static boolean ListContainsStr(List<String> list, String string) {
         boolean condition = false;
         for (String e : list) {
-            if (e.contains(string))
+            if (e.contains(string)) {
                 condition = true;
+                break;
+            }
         }
         return condition;
     }

@@ -27,7 +27,7 @@ public class ComputerOrderProcessTest extends BaseDriverParameter {
         int hddNo = RandomGenerator(hp.harddiscChoice.size() - 1, 0);
         myClick(hp.harddiscChoice.get(hddNo));
         myClick(hp.addToCart);
-        wait.until(ExpectedConditions.visibilityOf(hp.addToCartWarn));
-        Assert.assertTrue(hp.addToCartWarn.isDisplayed(), "Please select RAM or HDD!");
+        wait.until(ExpectedConditions.visibilityOf(hp.addToCartWarning));
+        Assert.assertTrue(hp.addToCartWarning.isDisplayed(), "Please select RAM or HDD!");
     }
 }

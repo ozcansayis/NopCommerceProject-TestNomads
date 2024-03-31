@@ -66,37 +66,7 @@ public class HomePageContent {
 
     @FindBy(css = "[class='top-menu notmobile'] li")
     public List<WebElement> tabMenu;
-  
-    @FindBy(css = "[class='product-viewmode'] a:nth-child(3)")
-    public WebElement viewMode;
-  
-    @FindBy(css = "[class='product-title']")
-    public List<WebElement> productList;
 
-    @FindBy(className = "ico-register")
-    public WebElement registerbuton;
-
-    @FindBy(id = "FirstName")
-    public WebElement fistName;
-
-    @FindBy(id = "LastName")
-    public WebElement lastName;
-
-    @FindBy(id ="Email" )
-    public WebElement email;
-
-    @FindBy(id = "Password")
-    public WebElement password;
-
-    @FindBy(id = "ConfirmPassword")
-    public WebElement ConfirmPassword;
-
-    @FindBy(id = "register-button")
-    public WebElement registerButton ;
-
-    @FindBy(className = "result")
-    public WebElement successMessage;
- 
     @FindBy(css = "div[class='page-title']>h1")
     public WebElement ortakTab;
 
@@ -116,5 +86,11 @@ public class HomePageContent {
     public List<WebElement> harddiscChoice;
 
     @FindBy(css = "[class='bar-notification success']")
-    public WebElement addToCartWarn;
+    public WebElement addToCartWarning;
+
+    @FindBy(css = "[class='product-viewmode'] a:nth-child(3)")
+    public WebElement viewMode;
+
+    @FindBy(css = "[class='product-title']")
+    public List<WebElement> productList;
 }
