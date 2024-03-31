@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Parameterized Search Process Test">
-    <test name="TC_508">
 
+    <test name="Chrome">
         <parameter name="browserType" value="chrome"/>
         <parameter name="searchText" value="Adobe Photoshop CS4"/>
 
@@ -17,6 +17,24 @@
         <classes>
             <class name="US_508.ParameterizedSearchProcessTest"/>
         </classes>
-
     </test>
+
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <parameter name="searchText" value="Adobe Photoshop CS4"/>
+
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="Search"/>
+                <include name="Smoke"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_508.ParameterizedSearchProcessTest"/>
+        </classes>
+    </test>
+
 </suite>
