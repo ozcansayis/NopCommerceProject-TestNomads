@@ -63,4 +63,8 @@ public class HomePageContent {
 
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
+
+    @FindBy(css = "[id='product_attribute_input_3'] [class='option-list']")
+    public WebElement hddChoice;
+
 }
