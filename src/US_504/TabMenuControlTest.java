@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 public class TabMenuControlTest extends BaseDriverParameter {
-    @Test(groups = {"UITesting","TAB Menu"})
+    @Test(groups = {"UITesting","TAB Menu"}, priority = 4)
     public void TC_504() {
         HomePageContent hp = new HomePageContent();
         Actions act = new Actions(BaseDriverParameter.driver);
@@ -28,11 +28,11 @@ public class TabMenuControlTest extends BaseDriverParameter {
             } else if (i>8 && i<12) {
                 act.moveToElement(hp.tabMenu.get(8)).perform();
             }
-            Assert.assertTrue(ListContainsString(hp.tabMenu,menuler[i]), "bulamadi");
+            Assert.assertTrue(ListContainsString(hp.tabMenu,menuler[i]), "Menu element could not be found!");
             String productName = hp.tabMenu.get(i).getText();
             myClick(hp.tabMenu.get(i));
             String sonuc = hp.ortakTab.getText();
-            Assert.assertEquals(sonuc, productName,"ayni değil");
+            Assert.assertEquals(sonuc, productName,"The searched product is not in the list!");
         }
     }
 }
