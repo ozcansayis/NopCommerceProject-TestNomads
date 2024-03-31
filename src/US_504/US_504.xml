@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <suite name="Tab Menu Control Test">
-    <test name="TC_504">
+
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name ="US_504.TabMenuControlTest"/>
+        </classes>
 
     </test>
 </suite>
