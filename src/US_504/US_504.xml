@@ -15,4 +15,29 @@
         </classes>
     </test>
 
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name ="US_504.TabMenuControlTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name ="US_504.TabMenuControlTest"/>
+        </classes>
+    </test>
 </suite>
