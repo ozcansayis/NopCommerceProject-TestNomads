@@ -12,8 +12,8 @@ public class UserLoginTest extends BaseDriverParameter {
         HomePageContent hpc = new HomePageContent();
         myClick(lc.loginButton);
         Assert.assertEquals(lc.loginPageTitle.getText(), "Welcome, Please Sign In!", "Log in page could not be reached.");
-        mySendKeys(lc.email, "testnomads01@gmail.com");
-        mySendKeys(lc.password, "TOtechno1");
+        mySendKeys(lc.email, "testnomads201@gmail.com");
+        mySendKeys(lc.password, "testnomads");
         myClick(lc.loginButton2);
         Assert.assertEquals(hpc.myAccount.getText(), "My account", "Failed entry.");
     }

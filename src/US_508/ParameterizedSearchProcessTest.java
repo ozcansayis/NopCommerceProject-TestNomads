@@ -12,7 +12,7 @@ public class ParameterizedSearchProcessTest extends BaseDriverParameter {
         LoginContent lc = new LoginContent();
         HomePageContent hpc = new HomePageContent();
         myClick(lc.loginButton);
-        mySendKeys(lc.email, "testnomads01@gmail.com");
+        mySendKeys(lc.email, "testnomads201@gmail.com");
         mySendKeys(lc.password, "testnomads");
         myClick(lc.loginButton2);
 //        mySendKeys(hpc.searchBox, text + Keys.ENTER);

@@ -24,7 +24,7 @@ public class PositiveAndNegativeLoginCombinationsTest extends BaseDriverParamete
         myClick(lc.loginButton2);
         if (email.isEmpty()) {
             softAssert.assertTrue(lc.emailError.isDisplayed(), "Email warning couldn't displayed!");
-        } else if (email.equals("testnomads01@gmail.com") && password.equals("TOtechno1")) {
+        } else if (email.equals("testnomads201@gmail.com") && password.equals("testnomads")) {
             softAssert.assertTrue(hpc.logoutButton.isDisplayed(), "Login failed!");
         } else {
             softAssert.assertTrue(lc.failedLogin.isDisplayed(), "Failed login warning couldn't displayed!");
@@ -41,7 +41,7 @@ public class PositiveAndNegativeLoginCombinationsTest extends BaseDriverParamete
                 {"blablabla@gmail.com", "123456"},
                 {"nomadzero@gmail.com", "123456"},
                 {"blablabla@gmail.com", "inanilmaziyisifre"},
-                {"testnomads01@gmail.com", "TOtechno1"}
+                {"testnomads201@gmail.com", "testnomads"}
         };
     }
 }

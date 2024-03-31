@@ -2,7 +2,7 @@
 <suite name="User Registration Test">
     <test name="Chrome">
         <parameter name="browserType" value="chrome"/>
-        <parameter name="email" value="testnomads01@gmail.com"/>
+        <parameter name="email" value="testnomads100@gmail.com"/>
         <classes>
 
             <class name="US_501.UserRegistrationTest"/>
@@ -11,7 +11,7 @@
 
     <test name="Firefox">
         <parameter name="browserType" value="firefox"/>
-        <parameter name="email" value="testnomads18@gmail.com"/>
+        <parameter name="email" value="testnomads101@gmail.com"/>
         <classes>
             <class name="US_501.UserRegistrationTest"/>
         </classes>
@@ -19,7 +19,7 @@
 
     <test name="Edge">
         <parameter name="browserType" value="edge"/>
-        <parameter name="email" value="testnomads19@gmail.com"/>
+        <parameter name="email" value="testnomads102@gmail.com"/>
         <classes>
             <class name="US_501.UserRegistrationTest"/>
         </classes>
