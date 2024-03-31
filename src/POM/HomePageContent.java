@@ -63,4 +63,23 @@ public class HomePageContent {
 
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
+
+    @FindBy(css = "[class='top-menu notmobile'] [href='/computers']")
+    public WebElement computers;
+
+    @FindBy(css = "[class='title'] [href='/desktops']")
+    public WebElement desktops;
+
+    @FindBy(css = "[class='product-item'][data-productid='1']")
+    public WebElement buildOwnComputer;
+
+    @FindBy(id = "product_attribute_2")
+    public WebElement ramChoice;
+
+    @FindBy(css = "[id*='product_attribute_3_']")
+    public List<WebElement> harddiscChoice;
+
+    @FindBy(css = "[class='bar-notification success']")
+    public WebElement addToCartWarn;
+
 }
