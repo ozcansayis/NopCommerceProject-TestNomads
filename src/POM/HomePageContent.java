@@ -64,6 +64,15 @@ public class HomePageContent {
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
 
+    @FindBy(css = "[class='top-menu notmobile'] li")
+    public List<WebElement> tabMenu;
+  
+    @FindBy(css = "[class='product-viewmode'] a:nth-child(3)")
+    public WebElement viewMode;
+  
+    @FindBy(css = "[class='product-title']")
+    public List<WebElement> productList;
+
     @FindBy(className = "ico-register")
     public WebElement registerbuton;
 
@@ -87,10 +96,7 @@ public class HomePageContent {
 
     @FindBy(className = "result")
     public WebElement successMessage;
-  
-    @FindBy(css = "[class='top-menu notmobile'] li")
-    public List<WebElement> tabMenu;
-
+ 
     @FindBy(css = "div[class='page-title']>h1")
     public WebElement ortakTab;
 
@@ -111,5 +117,4 @@ public class HomePageContent {
 
     @FindBy(css = "[class='bar-notification success']")
     public WebElement addToCartWarn;
-
 }
