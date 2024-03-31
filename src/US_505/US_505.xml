@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Control Of Products In The TAB Menu Test">
-    <test name="TC_505">
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="Search"/>
+                <include name="TAB Menu"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
 
+        <classes>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="Search"/>
+                <include name="TAB Menu"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+        </classes>
+    </test>
+    <test name="firefox">
+        <parameter name="browserType" value="firefox"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="Search"/>
+                <include name="TAB Menu"/>
+                <include name="Regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+        </classes>
 
     </test>
 </suite>

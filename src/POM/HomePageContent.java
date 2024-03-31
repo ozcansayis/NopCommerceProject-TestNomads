@@ -63,4 +63,10 @@ public class HomePageContent {
 
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
+    @FindBy(css = "[class='top-menu notmobile'] li")
+    public List<WebElement> tabMenu;
+    @FindBy(css = "[class='product-viewmode'] a:nth-child(3)")
+    public WebElement viewMode;
+    @FindBy(css = "[class='product-title']")
+    public List<WebElement> productList;
 }
