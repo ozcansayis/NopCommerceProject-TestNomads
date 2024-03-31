@@ -25,18 +25,12 @@ public class ComputerOrderProcessTest extends BaseDriverParameter {
         List<WebElement> ram=ramSelect.getOptions();
         int ramNo=ParentPage.RandomGenerator(ram.size()-1,1);
         ramSelect.selectByIndex(ramNo);
-
         Select hddSelect=new Select(hp.hddChoice);
         List<WebElement> hdd=hddSelect.getOptions();
         int hddNo=ParentPage.RandomGenerator(hdd.size()-1,0);
         hddSelect.selectByIndex(hddNo);
         myClick(hp.addToCart);
-        Assert.assertEquals(hp.addToChartError.getText(), "The product has been added to your shopping cart. ", "Please select RAM or HDD");
-
-
-
-
-
+        Assert.assertEquals(hp.addToCart.getText(), "The product has been added to your shopping cart. ", "Please select RAM or HDD");
 
     }
 }

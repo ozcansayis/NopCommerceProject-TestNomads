@@ -2,6 +2,15 @@
 <suite name="Computer Order Process Test">
     <test name="Chrome">
         <parameter name="browserType" value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="US_507.ComputerOrderProcessTest"/>
         </classes>
@@ -9,6 +18,15 @@
 
     <test name="Firefox">
         <parameter name="browserType" value="firefox"/>
+
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="US_507.ComputerOrderProcessTest"/>
         </classes>
@@ -16,6 +34,15 @@
 
     <test name="Edge">
         <parameter name="browserType" value="edge"/>
+
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
+
         <classes>
             <class name="US_507.ComputerOrderProcessTest"/>
         </classes>
