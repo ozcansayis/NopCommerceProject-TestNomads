@@ -8,7 +8,7 @@ import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 public class UserRegistrationTest extends BaseDriverParameter {
-    @Test(groups = {"Smoke", "Regression"}, priority = 1)
+    @Test(groups = {"Smoke", "Registration"}, priority = 1)
     @Parameters("email")
     public void TC_501(String email) {
         LoginContent lc = new LoginContent();
@@ -31,5 +31,4 @@ public class UserRegistrationTest extends BaseDriverParameter {
         softAssert.assertTrue(lc.successMessage.getText().equals("Your registration completed"), "Registration message should be displayed!");
         softAssert.assertAll();
     }
-
 }
