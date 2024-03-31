@@ -63,10 +63,58 @@ public class HomePageContent {
 
     @FindBy(xpath = "//div[@class='product-item']/div[2]/h2/a")
     public WebElement productTitle;
+
     @FindBy(css = "[class='top-menu notmobile'] li")
     public List<WebElement> tabMenu;
+  
     @FindBy(css = "[class='product-viewmode'] a:nth-child(3)")
     public WebElement viewMode;
+  
     @FindBy(css = "[class='product-title']")
     public List<WebElement> productList;
+
+    @FindBy(className = "ico-register")
+    public WebElement registerbuton;
+
+    @FindBy(id = "FirstName")
+    public WebElement fistName;
+
+    @FindBy(id = "LastName")
+    public WebElement lastName;
+
+    @FindBy(id ="Email" )
+    public WebElement email;
+
+    @FindBy(id = "Password")
+    public WebElement password;
+
+    @FindBy(id = "ConfirmPassword")
+    public WebElement ConfirmPassword;
+
+    @FindBy(id = "register-button")
+    public WebElement registerButton ;
+
+    @FindBy(className = "result")
+    public WebElement successMessage;
+ 
+    @FindBy(css = "div[class='page-title']>h1")
+    public WebElement ortakTab;
+
+    @FindBy(css = "[class='top-menu notmobile'] [href='/computers']")
+    public WebElement computers;
+
+    @FindBy(css = "[class='title'] [href='/desktops']")
+    public WebElement desktops;
+
+    @FindBy(css = "[class='product-item'][data-productid='1']")
+    public WebElement buildOwnComputer;
+
+    @FindBy(id = "product_attribute_2")
+    public WebElement ramChoice;
+
+    @FindBy(css = "[id*='product_attribute_3_']")
+    public List<WebElement> harddiscChoice;
+
+    @FindBy(css = "[class='bar-notification success']")
+    public WebElement addToCartWarn;
 }
