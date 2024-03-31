@@ -77,6 +77,6 @@ public class HomePageContent {
     public WebElement ramChoice;
 
     @FindBy(css = "[id='product_attribute_input_3'] [class='option-list']")
-    public WebElement hddChoice;
+    public WebElement harddiscChoice;
 
 }

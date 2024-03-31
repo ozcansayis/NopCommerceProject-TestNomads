@@ -17,7 +17,6 @@ public class ComputerOrderProcessTest extends BaseDriverParameter {
     public void TC_507(){
 
         HomePageContent hp=new HomePageContent();
-        ParentPage pp=new ParentPage();
         myClick(hp.computers);
         myClick(hp.desktops);
         myClick(hp.buildOwnComputer);
@@ -25,7 +24,7 @@ public class ComputerOrderProcessTest extends BaseDriverParameter {
         List<WebElement> ram=ramSelect.getOptions();
         int ramNo=ParentPage.RandomGenerator(ram.size()-1,1);
         ramSelect.selectByIndex(ramNo);
-        Select hddSelect=new Select(hp.hddChoice);
+        Select hddSelect=new Select(hp.harddiscChoice);
         List<WebElement> hdd=hddSelect.getOptions();
         int hddNo=ParentPage.RandomGenerator(hdd.size()-1,0);
         hddSelect.selectByIndex(hddNo);
