@@ -4,9 +4,15 @@
 
     <test name="Chrome">
         <parameter name="browserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+            </run>
+        </groups>
         <classes>
             <class name ="US_504.TabMenuControlTest"/>
         </classes>
-
     </test>
+
 </suite>

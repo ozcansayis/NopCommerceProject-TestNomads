@@ -57,7 +57,7 @@ public class ParentPage {
     public static boolean ListContainsString(List<WebElement> list, String string) {
         boolean condition = false;
         for (WebElement e : list) {
-            if (e.getText().equalsIgnoreCase(string))
+            if (e.getText().contains(string))
                 condition = true;
         }
         return condition;

@@ -87,6 +87,11 @@ public class HomePageContent {
 
     @FindBy(className = "result")
     public WebElement successMessage ;
+    @FindBy(css = "[class='top-menu notmobile'] li")
+    public List<WebElement> tabMenu;
+
+    @FindBy(css = "div[class='page-title']>h1")
+    public WebElement ortakTab;
 
 
 

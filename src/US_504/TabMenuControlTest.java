@@ -1,62 +1,38 @@
 package US_504;
 
+import POM.HomePageContent;
 import Utility.BaseDriverParameter;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 public class TabMenuControlTest extends BaseDriverParameter {
-    @Test
-    public void TC_504(){
-        MenuControl mc = new MenuControl();
-        myClick(mc.Computers);
-        Assert.assertTrue(mc.Resalt.getText().contains("Computers"));
-        myClick(mc.Desktops);
-        Assert.assertTrue(mc.Resalt.getText().contains("Desktops"));
-        driver.navigate().back();
-        myClick(mc.Notebooks);
-        Assert.assertTrue(mc.Resalt.getText().contains("Notebooks"));
-        driver.navigate().back();
-        myClick(mc.Software);
-        Assert.assertTrue(mc.Resalt.getText().contains("Software"));
+    @Test(groups = {"UITesting","TAB Menu"})
+    public void TC_504() {
+        HomePageContent hp = new HomePageContent();
+        Actions act = new Actions(BaseDriverParameter.driver);
+        WebDriverWait wait = new WebDriverWait(BaseDriverParameter.driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[class='top-menu notmobile'] li")));
 
-        myClick(mc.Electronics);
-        Assert.assertTrue(mc.Resalt.getText().contains("Electronics"));
-        myClick(mc.CameraPhoto);
-        Assert.assertTrue(mc.Resalt.getText().contains("Camera & photo"));
-        driver.navigate().back();
-        myClick(mc.CellPhones);
-        Assert.assertTrue(mc.Resalt.getText().contains("Cell phones"));
-        driver.navigate().back();
-        myClick(mc.Others);
-        Assert.assertTrue(mc.Resalt.getText().contains("Others"));
-
-        myClick(mc.Apparel);
-        Assert.assertTrue(mc.Resalt.getText().contains("Apparel"));
-        myClick(mc.Shoes);
-        Assert.assertTrue(mc.Resalt.getText().contains("Shoes"));
-        driver.navigate().back();
-        myClick(mc.Clothing);
-        Assert.assertTrue(mc.Resalt.getText().contains("Clothing"));
-        driver.navigate().back();
-        myClick(mc.Accessories);
-        Assert.assertTrue(mc.Resalt.getText().contains("Accessories"));
-
-
-        myClick(mc.Digitaldownloads);
-        Assert.assertTrue(mc.Resalt.getText().contains("Digital downloads"));
-
-        myClick(mc.Books);
-        Assert.assertTrue(mc.Resalt.getText().contains("Books"));
-
-        myClick(mc.Jewelry);
-        Assert.assertTrue(mc.Resalt.getText().contains("Jewelry"));
-
-        myClick(mc.GiftCards);
-        Assert.assertTrue(mc.Resalt.getText().contains("Gift Cards"));
-
-
-
-
+        String [] menuler = {"Computers","Desktops", "Notebooks","Software", "Electronics","Camera & photo", "Cell phones",
+                "Others" ,"Apparel","Shoes","Clothing","Accessories","Digital downloads","Books","Jewelry","Gift Cards"};
+        for (int i = 0; i < hp.tabMenu.size(); i++) {
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[class='top-menu notmobile'] li")));
+            if (i>0 && i<4)
+                act.moveToElement(hp.tabMenu.get(0)).perform();
+            else if (i>4 && i<8) {
+                act.moveToElement(hp.tabMenu.get(4)).perform();
+            } else if (i>8 && i<12) {
+                act.moveToElement(hp.tabMenu.get(8)).perform();
+            }
+            Assert.assertTrue(ListContainsString(hp.tabMenu,menuler[i]), "bulamadi");
+            String productName = hp.tabMenu.get(i).getText();
+            myClick(hp.tabMenu.get(i));
+            String sonuc = hp.ortakTab.getText();
+            Assert.assertEquals(sonuc, productName,"ayni değil");
+        }
     }
 }
