@@ -2,7 +2,7 @@
 
 <suite name="Login Test Suite">
     <test name="Login Test">
-
+        <parameter name="browserType" value="chrome"/>
         <groups>
             <run>
                 <include name="LoginTest"/>
@@ -10,7 +10,8 @@
         </groups>
 
         <classes>
-            <class />
+            <class name="US_502.UserLoginTest"/>
+            <class name="US_503.PositiveAndNegativeLoginCombinationsTest"/>
         </classes>
 
     </test>

@@ -2,7 +2,8 @@
 
 <suite name="Registration Test Suite">
     <test name="Registration Test">
-
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="email" value="testnomads203@gmail.com"/>
         <groups>
             <run>
                 <include name="Registration"/>
@@ -10,7 +11,7 @@
         </groups>
 
         <classes>
-            <class />
+            <class name="US_501.UserRegistrationTest"/>
         </classes>
 
     </test>

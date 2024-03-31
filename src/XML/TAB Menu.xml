@@ -2,7 +2,8 @@
 
 <suite name="TAB Menu Test Suit">
     <test name="TAB Menu Test">
-
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
         <groups>
             <run>
                 <include name="TAB Menu"/>
@@ -10,7 +11,10 @@
         </groups>
 
         <classes>
-            <class />
+            <class name="US_504.TabMenuControlTest"/>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+            <class name="US_506.GiftOrderingProcessTest"/>
+            <class name="US_507.ComputerOrderProcessTest"/>
         </classes>
 
     </test>

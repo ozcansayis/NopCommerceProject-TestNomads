@@ -2,7 +2,8 @@
 
 <suite name="Regression Suite">
     <test name="Regression">
-
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
         <groups>
             <run>
                 <include name="Regression"/>
@@ -10,7 +11,8 @@
         </groups>
 
         <classes>
-            <class/>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+            <class name="US_508.ParameterizedSearchProcessTest"/>
         </classes>
 
     </test>

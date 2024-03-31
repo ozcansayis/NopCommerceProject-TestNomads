@@ -2,7 +2,9 @@
 
 <suite name="Smoke Test Suite">
     <test name="Smoke">
-
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="email" value="testnomads204@gmail.com"/>
+        <parameter name="searchText" value="Adobe Photoshop CS4"/>
         <groups>
             <run>
                 <include name="Smoke"/>
@@ -10,8 +12,10 @@
         </groups>
 
         <classes>
-            <class/>
-
+            <class name="US_501.UserRegistrationTest"/>
+            <class name="US_502.UserLoginTest"/>
+            <class name="US_503.PositiveAndNegativeLoginCombinationsTest"/>
+            <class name="US_508.ParameterizedSearchProcessTest"/>
         </classes>
 
     </test>

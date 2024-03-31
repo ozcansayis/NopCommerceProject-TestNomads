@@ -2,7 +2,7 @@
 
 <suite name="Order Test Suite">
     <test name="Order Test">
-
+        <parameter name="browserType" value="chrome"/>
         <groups>
             <run>
                 <include name="Order"/>
@@ -10,7 +10,8 @@
         </groups>
 
         <classes>
-            <class />
+            <class name="US_506.GiftOrderingProcessTest"/>
+            <class name="US_507.ComputerOrderProcessTest"/>
         </classes>
 
     </test>

@@ -2,7 +2,9 @@
 
 <suite name="UITesting Test Suit">
     <test name="UITesting Test">
-
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="product" value="Apple MacBook Pro 13-inch"/>
+        <parameter name="searchText" value="Adobe Photoshop CS4"/>
         <groups>
             <run>
                 <include name="UITesting"/>
@@ -10,7 +12,11 @@
         </groups>
 
         <classes>
-            <class />
+            <class name="US_504.TabMenuControlTest"/>
+            <class name="US_505.ControlOfProductsInTheTABMenuTest"/>
+            <class name="US_506.GiftOrderingProcessTest"/>
+            <class name="US_507.ComputerOrderProcessTest"/>
+            <class name="US_508.ParameterizedSearchProcessTest"/>
         </classes>
 
     </test>
