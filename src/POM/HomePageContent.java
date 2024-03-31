@@ -73,10 +73,13 @@ public class HomePageContent {
     @FindBy(css = "[class='product-item'][data-productid='1']")
     public WebElement buildOwnComputer;
 
-    @FindBy(id = "['product_attribute_2']")
+    @FindBy(id = "product_attribute_2")
     public WebElement ramChoice;
 
-    @FindBy(css = "[id='product_attribute_input_3'] [class='option-list']")
-    public WebElement harddiscChoice;
+    @FindBy(css = "[id*='product_attribute_3_']")
+    public List<WebElement> harddiscChoice;
+
+    @FindBy(css = "[class='bar-notification success']")
+    public WebElement addToCartWarn;
 
 }
