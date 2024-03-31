@@ -14,6 +14,7 @@ public class ParentPage {
 
     public void myClick(WebElement element) {
         scrollToElement(element);
+        wait.until(ExpectedConditions.visibilityOf(element));
         wait.until(ExpectedConditions.elementToBeClickable(element));
         element.click();
     }

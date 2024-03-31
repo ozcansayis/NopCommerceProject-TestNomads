@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Computer Order Process Test">
-    <test name="TC_507">
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
 
+        <classes>
+            <class name="US_507.ComputerOrderProcessTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_507.ComputerOrderProcessTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge">
+        <parameter name="browserType" value="edge"/>
+        <groups>
+            <run>
+                <include name="UITesting"/>
+                <include name="TAB Menu"/>
+                <include name="Order"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="US_507.ComputerOrderProcessTest"/>
+        </classes>
     </test>
 </suite>

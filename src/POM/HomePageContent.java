@@ -86,20 +86,30 @@ public class HomePageContent {
     public WebElement registerButton ;
 
     @FindBy(className = "result")
-    public WebElement successMessage ;
+    public WebElement successMessage;
+  
     @FindBy(css = "[class='top-menu notmobile'] li")
     public List<WebElement> tabMenu;
 
     @FindBy(css = "div[class='page-title']>h1")
     public WebElement ortakTab;
 
+    @FindBy(css = "[class='top-menu notmobile'] [href='/computers']")
+    public WebElement computers;
 
+    @FindBy(css = "[class='title'] [href='/desktops']")
+    public WebElement desktops;
 
+    @FindBy(css = "[class='product-item'][data-productid='1']")
+    public WebElement buildOwnComputer;
 
+    @FindBy(id = "product_attribute_2")
+    public WebElement ramChoice;
 
+    @FindBy(css = "[id*='product_attribute_3_']")
+    public List<WebElement> harddiscChoice;
 
-
-
-
+    @FindBy(css = "[class='bar-notification success']")
+    public WebElement addToCartWarn;
 
 }

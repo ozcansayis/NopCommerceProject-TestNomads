@@ -6,14 +6,14 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class ParameterizedSearchProcessTest extends BaseDriverParameter {
-    @Test(groups = {"UITesting", "Search", "Smoke", "Regression"})
+    @Test(groups = {"UITesting", "Search", "Smoke", "Regression"}, priority = 8)
     @Parameters({"searchText"})
     public void TC_508(String text) {
         LoginContent lc = new LoginContent();
         HomePageContent hpc = new HomePageContent();
         myClick(lc.loginButton);
-        mySendKeys(lc.email, "technodeneme007@gmail.com");
-        mySendKeys(lc.password, "12345Aa.");
+        mySendKeys(lc.email, "testnomads01@gmail.com");
+        mySendKeys(lc.password, "testnomads");
         myClick(lc.loginButton2);
 //        mySendKeys(hpc.searchBox, text + Keys.ENTER);
         mySendKeys(hpc.searchBox, text);
