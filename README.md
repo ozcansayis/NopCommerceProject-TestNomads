@@ -22,11 +22,11 @@ This project aims to automate testing for NopCommerce, an open-source e-commerce
 
 | Name                    | Role            | GitHub                                           | E-posta                  |
 |-------------------------|-----------------|--------------------------------------------------|--------------------------|
-| Ayşe İhtiyar            | QA Engineer     | [ayseihtiyar](https://github.com/ayseihtiyar)   | ayseihtiyar@gmail.com   |
+| Ayşe İhtiyar            | QA Engineer     | [ayseihtiyar](https://github.com/ayseihtiyar)   | ayseeihtiyar@gmail.com   |
 | Fatoş Ergündüz         | QA Engineer     | [fatosergunduz](https://github.com/fatosergunduz) | erbelma@gmail.com       |
 | Abdulkabir Türkoğlu    | QA Engineer     | [AbdulkabirTurkoglu](https://github.com/AbdulkabirTurkoglu) | turkogluabdulkabir@gmail.com |
-| Samed Yekenkurul       | QA Engineer     | [samfrmda01](https://github.com/samfrmda01)       | samfrmda01@gmail.com    |
-| Ümit Eser              | QA Engineer     | [umiteser](https://github.com/umiteser)           | umiteser@gmail.com      |
+| Samed Yekenkurul       | QA Engineer     | [samfrmda01](https://github.com/samfrmda01)       |     |
+| Ümit Eser              | QA Engineer     | [umiteser](https://github.com/umiteser)           | eser_umit@hotmail.com      |
 | Mehmet Özcan Sayış     | Team Lead & QA Engineer   | [mehmetozcansayis](https://github.com/ozcansayis) | ozcansayis@gmail.com |
 
 
